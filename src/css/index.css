@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(240, 232, 255);
+}
+
+.bg-purple {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: rgb(235, 235, 235);
+}
+
+.button-gradient {
+  background: white;
+  border: 1px purple solid;
+  transition: all 1s ease;
+  color: purple;
+}
+.button-gradient:hover {
+  background: linear-gradient(to right, #4e54c8, #8f94fb);
+  color: white;
+}
+
+.forecast-cards {
+  min-height: 150px;
+  border-radius: 4px;
+}
+
+.light-shadow {
+  box-shadow: 3px 3px 25px #4645452f;
+}
+
+.big-heading-1 {
+  font-size: 5em;
+}
+
+.big-heading-2 {
+  font-size: 4em;
+}
+
+.current-weather-info {
+  box-shadow: 3px 3px 25px #4e54c88c;
+  border-radius: 4px;
+}
+
+.custom-control,
+.custom-switch {
+  padding-left: 0px;
+}
