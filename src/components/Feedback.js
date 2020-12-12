@@ -51,7 +51,6 @@ class Feedback extends Component {
                   model=".firstname"
                   id="firstname"
                   name="firstname"
-                  placeholder="Your firstname"
                   className="form-control"
                   validators={{
                     required,
@@ -80,7 +79,6 @@ class Feedback extends Component {
                   model=".lastname"
                   id="lastname"
                   name="lastname"
-                  placeholder="Your lastname"
                   className="form-control"
                   validators={{
                     required,
@@ -110,7 +108,6 @@ class Feedback extends Component {
                   id="email"
                   className="form-control"
                   name="email"
-                  placeholder="Enter your email ID"
                   validators={{
                     required,
                     validEmail,
@@ -137,7 +134,6 @@ class Feedback extends Component {
                   id="message"
                   name="message"
                   row="12"
-                  placeholder="Type your message here"
                   className="form-control"
                 />
               </Col>
