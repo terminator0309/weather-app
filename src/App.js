@@ -34,7 +34,7 @@ class App extends Component {
           long: position.coords.longitude,
         });
       });
-    } else alert("no");
+    } else alert("Geolocation not supported by the browser !");
   }
 
   render() {

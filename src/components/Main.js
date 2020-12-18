@@ -5,7 +5,6 @@ import ForecastWeather from "./ForecastWeather";
 
 class Main extends Component {
   render() {
-    // TODO: THIS COMPONENT IS A MESS
     return (
       <div className="mt-3">
         <div className="container-fluid">
