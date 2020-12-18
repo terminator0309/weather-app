@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Chart from "./Chart";
 import CurrentWeather from "./CurrentWeather";
 import CurrentWeatherInfo from "./CurrentWeatherInfo";
 import ForecastWeather from "./ForecastWeather";
@@ -12,7 +13,14 @@ class Main extends Component {
             <CurrentWeather />
             <CurrentWeatherInfo />
           </div>
-          <ForecastWeather />
+          <div class="row">
+            <div class="col">
+              <Chart />
+            </div>
+            <div class="col">
+              <ForecastWeather />
+            </div>
+          </div>
         </div>
       </div>
     );

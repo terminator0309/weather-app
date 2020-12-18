@@ -1,8 +1,0 @@
-EVERYTHING IS JUST F**KED UP!!!
-
-1. Read the documentation of the API first and fully.
-
-
-Things to do
-1. Feedback form (use modal for that)
-2. add icons to necessary places
