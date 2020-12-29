@@ -46,13 +46,13 @@ export const weatherDataLoading = () => {
 
 export const fetchWeatherData = (coords) => (dispatch) => {
   dispatch(weatherDataLoading());
-
+  console.log(process.env.REACT_APP_APPID, process.env.REACT_APP_GEOCODEAPPID);
   return fetch(
     "https://api.openweathermap.org/data/2.5/onecall?" +
       new URLSearchParams({
         lat: coords.lat,
         lon: coords.long,
-        appid: process.REACT_APPID,
+        appid: process.env.REACT_APP_APPID,
         units: "metric",
         exclude: "minutely,alerts",
       })
@@ -71,7 +71,7 @@ export const ConvertCityNameToCoords = (cityname) => (dispatch) => {
     "https://api.opencagedata.com/geocode/v1/json?" +
       new URLSearchParams({
         q: cityname,
-        key: process.REACT_GEOCODEAPPID,
+        key: process.env.REACT_APP_GEOCODEAPPID,
         limit: 1,
       })
   )
@@ -92,7 +92,7 @@ export const ConvertCityNameToCoords = (cityname) => (dispatch) => {
     })
     .then((data) => {
       if (data.results.length === 0) throw new Error("Place Not Found!");
-      console.log("cityname to coords", data);
+      //console.log("cityname to coords", data);
       dispatch(updateCoords(data.results[0].geometry));
     })
     .catch((errMess) => dispatch(failedCoords(errMess)));
