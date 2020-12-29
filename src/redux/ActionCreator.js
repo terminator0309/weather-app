@@ -52,7 +52,7 @@ export const fetchWeatherData = (coords) => (dispatch) => {
       new URLSearchParams({
         lat: coords.lat,
         lon: coords.long,
-        appid: ActionType.APPID,
+        appid: process.REACT_APPID,
         units: "metric",
         exclude: "minutely,alerts",
       })
@@ -71,7 +71,7 @@ export const ConvertCityNameToCoords = (cityname) => (dispatch) => {
     "https://api.opencagedata.com/geocode/v1/json?" +
       new URLSearchParams({
         q: cityname,
-        key: ActionType.GEOCODEAPPID,
+        key: process.REACT_GEOCODEAPPID,
         limit: 1,
       })
   )
