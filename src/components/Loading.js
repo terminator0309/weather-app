@@ -14,11 +14,7 @@ export default function Loading() {
       <div className="display-4" style={{ position: "absolute", zIndex: "2" }}>
         LOADING
       </div>
-      <div className="loading-outer d-flex justify-content-center align-items-center">
-        {/* <div className="loading-middle d-flex justify-content-center align-items-center">
-          <div className="loading-inner"></div>
-        </div> */}
-      </div>
+      <div className="loading-outer d-flex justify-content-center align-items-center"></div>
     </div>
   );
 }

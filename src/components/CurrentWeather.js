@@ -10,7 +10,6 @@ const mapStateToProps = (state) => {
 class CurrentWeather extends Component {
   render() {
     return (
-      //! some styling need to be fixed.
       <>
         <div
           className="col-11 col-md-5 light-shadow"

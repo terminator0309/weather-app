@@ -66,7 +66,7 @@ class NavBar extends Component {
                 <div className="nav-item-content">Feedback</div>
                 <div className="nav-item-underline" />
               </Nav.Link>
-              <Nav.Link href="#">
+              <Nav.Link href="https://github.com/terminator0309/weather-app">
                 <div className="nav-item-content">Github</div>
                 <div className="nav-item-underline" />
               </Nav.Link>

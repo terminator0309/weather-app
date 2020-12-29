@@ -26,7 +26,7 @@ function Chart() {
               label: "",
               data: [...Temps],
               images: [...IMG],
-              //backgroundColor: "rgba(253, 181, 86, 0.555)",
+
               backgroundColor: "rgba(255, 225, 55, 0.589)",
               borderColor: "orange",
               borderWidth: 2,
