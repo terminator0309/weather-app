@@ -30,7 +30,12 @@ class NavBar extends Component {
   render() {
     return (
       <>
-        <Navbar collapseOnSelect expand="md" className="bg-white">
+        <Navbar
+          collapseOnSelect
+          expand="md"
+          className="nav-background"
+          sticky="top"
+        >
           <Navbar.Brand>
             <img
               src="img\sun-removebg-preview.png"
@@ -54,12 +59,17 @@ class NavBar extends Component {
                   });
                 }}
               >
-                My Location
+                <div className="nav-item-content">My Location</div>
+                <div className="nav-item-underline" />
               </Nav.Link>
               <Nav.Link href="#" onClick={this.openModal}>
-                Feedback
+                <div className="nav-item-content">Feedback</div>
+                <div className="nav-item-underline" />
               </Nav.Link>
-              <Nav.Link href="#"> Github</Nav.Link>
+              <Nav.Link href="#">
+                <div className="nav-item-content">Github</div>
+                <div className="nav-item-underline" />
+              </Nav.Link>
             </Nav>
             <SearchCityName />
           </Navbar.Collapse>

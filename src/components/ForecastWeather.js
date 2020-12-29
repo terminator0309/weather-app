@@ -16,8 +16,8 @@ const convertDate = (date) => {
 class ForecastWeather extends Component {
   render() {
     const forecastDaily = this.props.forecast.map((daily) => (
-      <div key={daily.dt} className="col-5 col-md-2">
-        <div className="p-1 mt-3 bg-white forecast-cards light-shadow">
+      <div key={daily.dt} className="col-5 col-md-3">
+        <div className="p-1 mt-3 forecast-cards light-shadow">
           <center>
             <div>{convertDate(daily.dt)}</div>
             <div>
@@ -43,7 +43,12 @@ class ForecastWeather extends Component {
     ));
     return (
       <>
-        <div className="row justify-content-center">{forecastDaily}</div>
+        <div class="row align-items-center justify-content-center mt-5">
+          <h1>Weather Forecast</h1>
+        </div>
+        <div className="row justify-content-center mt-3 mb-5">
+          {forecastDaily}
+        </div>
       </>
     );
   }

@@ -13,8 +13,8 @@ class CurrentWeather extends Component {
       //! some styling need to be fixed.
       <>
         <div
-          className="col-11 col-md-4 bg-white light-shadow"
-          style={{ minHeight: "200px", borderRadius: "4px" }}
+          className="col-11 col-md-5 light-shadow"
+          style={{ minHeight: "200px", borderRadius: "20px" }}
         >
           <div className="row align-items-center">
             <div className="col">

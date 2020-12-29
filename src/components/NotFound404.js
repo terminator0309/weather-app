@@ -5,7 +5,7 @@ export default function NotFound404(props) {
     <div
       className="d-flex justify-content-center align-items-center bg-danger"
       style={{
-        position: "relative",
+        position: "absolute",
         top: "56px",
         bottom: "0",
         width: "100%",
@@ -14,7 +14,7 @@ export default function NotFound404(props) {
       <h1>
         Oops! Something went wrong.
         <br />
-        <pre>{props.errMess}</pre>
+        <pre>{props.errMess.message}</pre>
       </h1>
     </div>
   );

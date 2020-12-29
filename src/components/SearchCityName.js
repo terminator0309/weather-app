@@ -26,7 +26,7 @@ class SearchCityName extends Component {
         />
 
         <Button type="submit" className="button-gradient">
-          Search
+          <i class="fa fa-search" aria-hidden="true"></i>
         </Button>
       </Form>
     );

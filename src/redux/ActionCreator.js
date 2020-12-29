@@ -54,7 +54,7 @@ export const fetchWeatherData = (coords) => (dispatch) => {
         lon: coords.long,
         appid: ActionType.APPID,
         units: "metric",
-        exclude: "hourly,minutely,alerts",
+        exclude: "minutely,alerts",
       })
   )
     .then((response) => {
