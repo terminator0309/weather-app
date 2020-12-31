@@ -54,3 +54,24 @@
     transform: rotate(360deg);
   }
 }
+
+.icon-container {
+  height: 100px;
+  width: 100px;
+  position: relative;
+}
+
+.icon-container > .fa-cloud {
+  color: lightblue;
+  font-size: 50px;
+}
+
+.icon-container > .fa-sun {
+  position: absolute;
+  font-size: 40px;
+  color: orange;
+  left: 35%;
+  top: -5%;
+  z-index: -1;
+  animation: spin-outer 4s linear infinite;
+}

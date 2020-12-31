@@ -32,7 +32,7 @@ class NavBar extends Component {
       <>
         <Navbar
           collapseOnSelect
-          expand="md"
+          expand="sm"
           className="nav-background"
           sticky="top"
         >

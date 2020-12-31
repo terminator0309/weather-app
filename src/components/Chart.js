@@ -34,6 +34,7 @@ function Chart() {
               hoverBackgroundColor: "red",
               hoverRadius: 7,
               hoverBorderColor: "red",
+              pointRadius: 5,
             },
           ],
         }}
